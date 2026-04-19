@@ -10,8 +10,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
 
-# === FUNCTIONS ===
-
 def load_data(filepath):
     df = pd.read_csv(filepath)
     return df
@@ -75,8 +73,6 @@ def evaluate_model(model, X_test, y_test):
     print("Classification Report:")
     print(classification)
 
-
-# === MAIN ===
 
 if __name__ == "__main__":
     filepath = os.path.join(os.path.dirname(__file__), "titanic.csv")
